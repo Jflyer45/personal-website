@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
 import CTA from './CTA'
-import ME from '../../assets/me.png'
-df
+import ME from '../../assets/me.jpg'
+
 const Header = () => {
   return (
     <header>
@@ -13,7 +13,7 @@ const Header = () => {
         <CTA />
 
         <div className="me">
-          <img src="" alt="" />
+          <img src={ME} alt="" />
         </div>
       </div>
     </header>
