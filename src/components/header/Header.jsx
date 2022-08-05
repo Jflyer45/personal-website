@@ -14,8 +14,6 @@ const ReactTypingEffectDemo = () => {
         text={["Software Engineer", "Economic Research Co-author"]}
         speed={typeAndDeleteSpeed}
         eraseSpeed={typeAndDeleteSpeed}
-
-        // cursorRenderer={cursor => <h1>{cursor}</h1>}        
       />
     </>
   );
@@ -36,8 +34,6 @@ const Header = () => {
         <div className="me">
           <img src={ME} alt="" />
         </div>
-
-        <a href='#contact' className='scroll__down'>Scroll Down</a>
       </div>
     </header>
   )
