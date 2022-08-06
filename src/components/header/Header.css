@@ -23,7 +23,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
     position: absolute;
 }
 
@@ -60,7 +60,7 @@ header{
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
     header {
-        /* height: 68vh; */
+        height: 68vh;
     }
 }
 
