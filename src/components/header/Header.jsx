@@ -14,6 +14,8 @@ const ReactTypingEffectDemo = () => {
         text={["Software Engineer", "Economic Research Co-author"]}
         speed={typeAndDeleteSpeed}
         eraseSpeed={typeAndDeleteSpeed}
+        eraseDelay={2000}
+        typingDelay={10}
       />
     </>
   );
@@ -27,7 +29,6 @@ const Header = () => {
         <h1>Jeremy Fischer</h1>
         <h5 className='text-light'><ReactTypingEffectDemo /></h5>
         
-
         <CTA />
         <HeaderSocial/>
 
