@@ -42,6 +42,17 @@ const Experience = () => {
             {createArticle("MongodDB", "Basic")}
           </div>
         </div>
+
+        <div className="experience__backend">
+        <h3>Other Experience</h3>
+          <div className="experience__content">
+            {createArticle("Python", "Experienced")}
+            {createArticle("Version Control", "Intermediate")}
+            {createArticle("C#", "Intermediate")}
+            {createArticle("Java", "Intermediate")}
+            {createArticle("D3/Data Visualization", "Basic")}
+          </div>
+        </div>
       </div>
     </section>
   )
