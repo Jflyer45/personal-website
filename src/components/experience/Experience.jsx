@@ -2,6 +2,19 @@ import React from 'react'
 import './Experience.css'
 import {BsPatchCheckFill} from "react-icons/bs"
 
+const createArticle = (title, experienceLevel) => {
+  return(
+    <article className='experience__detials'>
+      <BsPatchCheckFill className='icon'/>
+      <div>
+        <h4>{title}</h4>
+        <small className='text-light'>{experienceLevel}</small>
+      </div>
+    </article>
+  )
+}
+
+
 const Experience = () => {
   return (
     <section id='Experience'>
@@ -11,82 +24,22 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>HTML</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>CSS</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>Javascript</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>Bootstrap</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+            {createArticle("HTML", "Experienced")}
+            {createArticle("Javascript", "Intermediate")}
+            {createArticle("React", "Basic")}
+            {createArticle("CSS", "Basic")}
+            {createArticle("Bootstrap", "Basic")}
           </div>
         </div>
 
         <div className="experience__backend">
         <h3>Backend Development</h3>
           <div className="experience__content">
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>Node.js</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>MySQL</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>MongodDB</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>Bootstrap</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__detials'>
-              <BsPatchCheckFill className='icon'/>
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+            {createArticle("Node.js", "Experienced")}
+            {createArticle("MySQL", "Intermediate")}
+            {createArticle("Express", "Intermediate")}
+            {createArticle("Java", "Intermediate")}
+            {createArticle("MongodDB", "Basic")}
           </div>
         </div>
       </div>
