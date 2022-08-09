@@ -18,7 +18,7 @@ const data = [
   {
     id:2,
     image: IMG1,
-    title: "CIS 122 Data Structures Final Group Project",
+    title: "Economic Research Paper w/ Professor Li Simonson",
     github: "https://github.com/Jflyer45/CIS122-Project",
     demo: "https://jflyer45.github.io/CIS122-Project/"
   },
@@ -46,6 +46,7 @@ const data = [
 ]
 
 const createPortfolioItem = (dataItem) => {
+    
     return(
       <article className='portfolio__item'>
           <div className='portfolio__item-image'>
