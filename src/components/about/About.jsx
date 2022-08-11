@@ -27,21 +27,20 @@ const About = () => {
             </article>
             <article className='about__card'>
               <FiUsers className='about__icon' />
-              <h5>Experience</h5>
-              <small>1 Year as a Software Engineer Intern</small>              
+              <h5>ToDo</h5>
+              <small>Todo</small>              
             </article>
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
-              <h5>Experience</h5>
-              <small>1 Year as a Software Engineer Intern</small>              
+              <h5>Research</h5>
+              <small>In the process of writing and publishing an economic paper</small>              
             </article>
           </div>
           {/* Content Below the cards */}
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Corporis voluptatum nemo modi magnam? Dolorum dolore ab, 
-              quod magni hic ipsum laudantium vel! Eius consectetur 
-              officiis id nam. Quod, animi corporis.
+              Hello, I'm Jeremy Fischer! I am a software engineer studying at Minnesota State University, Mankato.
+              I've been programming since age 16 and am excited to share my projects that I've been working on.
+              Besides tech, some other hobbies I have includes powerlifting, tennis, long distance running, D&D, and audiobooks.
             </p>
 
             <a href="#Contact" className='btn btn-primary'>Let's Talk</a>

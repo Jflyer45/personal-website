@@ -38,7 +38,6 @@ const Experience = () => {
             {createArticle("Node.js", "Experienced")}
             {createArticle("MySQL", "Intermediate")}
             {createArticle("Express", "Intermediate")}
-            {createArticle("Java", "Intermediate")}
             {createArticle("MongodDB", "Basic")}
           </div>
         </div>
@@ -51,6 +50,7 @@ const Experience = () => {
             {createArticle("C#", "Intermediate")}
             {createArticle("Java", "Intermediate")}
             {createArticle("D3/Data Visualization", "Basic")}
+            {createArticle("Linux", "Basic")}
           </div>
         </div>
       </div>
