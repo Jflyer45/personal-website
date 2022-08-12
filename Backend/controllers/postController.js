@@ -12,8 +12,12 @@ const getPosts = asyncHandler(async (req, res) => {
 })
 
 const setPost = asyncHandler(async (req, res) => {
+    console.log(req.body)
+    
     const post = await Post.create({
-        title: req.body.title
+        title: req.body.title,
+        text: req.body.text,
+        content: req.body.content
     })
 
     res.json(post)

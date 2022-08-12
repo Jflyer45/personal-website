@@ -11,10 +11,7 @@ const postSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    content: [{
-        type: String,
-        link: String
-    }]   
+    content: { type : Array , "default" : [] }
 }, {
     timestamps: true
 })
