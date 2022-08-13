@@ -54,7 +54,7 @@ function Blog (){
       setValue(response.data[0].text);
     })
   }, []) // Second argurment, [], tells useEffect to rerender when that object changes
-  // But since it is static, it never rerenders! Perfect
+  // But since it is static, it never rerenders! Perfect, we only call api once
 
   return(
     <div>
