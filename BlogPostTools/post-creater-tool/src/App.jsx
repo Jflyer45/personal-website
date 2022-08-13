@@ -40,6 +40,7 @@ function App() {
     const requestOptions = {
         method: 'POST',
         mode: "cors",
+        headers: {'Content-Type':'application/json'},
         body: JSON.stringify(createJSONFromInput())
     };
     debugger;
@@ -49,6 +50,8 @@ function App() {
     console.log(`Response Data:`)
     console.log(data)
   }
+
+  // const render
 
   return (
     <div className="App">
@@ -85,7 +88,7 @@ function App() {
                 )}
               </div>
               <div>
-                {contentList.length - 1 && (
+                {contentList.length - 1 > 0 && (
                 <button type="button" className="remove-btn"
                 onClick={() => handleContentRemove(index)}
                 >
@@ -95,7 +98,7 @@ function App() {
               </div>
             </div>
           ))}
-          <button className="submit">Create post</button>
+          <button className="submit-btn">Create post</button>
       </form>
     </div>
   );

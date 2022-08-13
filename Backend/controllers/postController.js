@@ -13,7 +13,6 @@ const getPosts = asyncHandler(async (req, res) => {
 
 const setPost = asyncHandler(async (req, res) => {
     console.log(req.body)
-    console.log(req)
 
     const post = await Post.create({
         title: req.body.title,
