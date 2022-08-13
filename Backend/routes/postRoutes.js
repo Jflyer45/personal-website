@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router()
-const {getPosts, setPost, deletePost, updatePost} = require("../controllers/postController")
+const {getPost, getPosts, setPost, deletePost, updatePost} = require("../controllers/postController")
 
 router.get('/', getPosts)
+
+router.get('/:id', getPost)
 
 router.post('/', setPost)
 
