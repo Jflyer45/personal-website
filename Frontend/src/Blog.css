@@ -1,0 +1,23 @@
+.post{
+    float: left;
+    width: auto;
+    width: 60%;
+}
+
+.side-content {
+    float: right;
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: 1px;
+}
+
+.content{
+    padding-top: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+li {
+    list-style-type: disc;
+  }
