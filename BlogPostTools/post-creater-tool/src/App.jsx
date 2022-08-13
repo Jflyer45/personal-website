@@ -1,11 +1,12 @@
 import './App.css';
 import {useState} from "react";
+import MDEditor from '@uiw/react-md-editor';
+import React from "react";
 
 function App() {
-
+  const [mdValue, setmdValue] = React.useState("**Hello world!!!**");
   const [contentList, setContentList] = useState([{type:"", link: ''}])
   const [titleText, setTitleText] = useState("")
-  const [bodyText, setBodyText] = useState("")
 
   console.log(contentList);
 
@@ -29,7 +30,7 @@ function App() {
   const createJSONFromInput = () => {
     return {
       title:titleText,
-      text:bodyText,
+      text:mdValue,
       content:contentList
     }
   }
@@ -47,8 +48,10 @@ function App() {
     console.log(requestOptions)
     const response = await fetch('http://localhost:8000/api/posts', requestOptions);
     const data = await response.json();
-    console.log(`Response Data:`)
-    console.log(data)
+    
+    // Remove fields, keep text incase it doesn't send
+    setTitleText("")
+    setContentList([{type:"", link: ''}])
   }
 
   // const render
@@ -58,13 +61,16 @@ function App() {
       <form 
       onSubmit={(e) =>handleFormSubmit(e)}>
         <h3>Title</h3>
-        <input type="text" value={titleText}
+        <input type="text" value={titleText} required
         onChange = {(e) => setTitleText(e.target.value)}
         />
         <h3>Text Body</h3>
-        <textarea
-          onChange = {(e) => setBodyText(e.target.value)}
-        />
+        <div className="editor">
+          <MDEditor required
+          value={mdValue}
+          onChange={setmdValue}
+          />
+        </div>
         <h3>Contents</h3>
         {contentList.map((singleContent, index) => (
             <div key={index} className="content">
@@ -100,6 +106,11 @@ function App() {
           ))}
           <button className="submit-btn">Create post</button>
       </form>
+      <div>
+        <h1>RENDER EXAMPLE</h1>
+        <br/>
+        <MDEditor.Markdown source={mdValue} style={{ whiteSpace: 'pre-wrap' }} />
+      </div>
     </div>
   );
 }
