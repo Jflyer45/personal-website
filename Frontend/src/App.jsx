@@ -8,20 +8,34 @@ import Portfolio from './components/portfolio/Portfolio.jsx'
 import Testimonials from './components/testimonials/Testimonials.jsx'
 import Contact from './components/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+const HomePage = () =>{
+  return(
+    <div>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      {/* <Services /> */}
+      <Portfolio />
+      {/* <Testimonials /> */}
+      <Contact />
+      <Footer />
+    </div>
+  )
+}
 
 const app = () => {
   return (
-    <>
-        <Header />
-        <Nav />
-        <About />
-        <Experience />
-        {/* <Services /> */}
-        <Portfolio />
-        {/* <Testimonials /> */}
-        <Contact />
-        <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path='/'><HomePage/></Route>
+
+        {/* Error Page, TODO */}
+        <Route path='*'></Route>  
+      </Routes>
+    </Router>
   )
 }
 
