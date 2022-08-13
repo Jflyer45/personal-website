@@ -68,7 +68,7 @@ function App() {
         <h3>Contents</h3>
         {contentList.map((singleContent, index) => (
             <div key={index} className="content">
-              <div>
+              <div className='inputs'>
                 <select name="type"
                 onChange = {(e) => handleContentChange(e, index)}
                 >
@@ -87,7 +87,7 @@ function App() {
                   </button>
                 )}
               </div>
-              <div>
+              <div className='remove-option'>
                 {contentList.length - 1 > 0 && (
                 <button type="button" className="remove-btn"
                 onClick={() => handleContentRemove(index)}
