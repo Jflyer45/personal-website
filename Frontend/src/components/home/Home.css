@@ -33,7 +33,7 @@ html {
     display: none;
 }
 
-body {
+.body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
