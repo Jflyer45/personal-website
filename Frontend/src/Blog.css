@@ -1,6 +1,6 @@
-/* p {
-    padding-left: 1rem;
-} */
+p {
+    margin-bottom: 0 !important;
+}
 
 .entirePage {
 
@@ -38,6 +38,12 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
     
 }
 
+ul {
+    margin-bottom: 0 !important;
+    line-height: 1rem;
+}
+
 li {
     list-style-type: disc;
+    line-height: .5rem;
   }
