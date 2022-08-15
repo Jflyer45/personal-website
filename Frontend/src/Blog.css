@@ -32,7 +32,8 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
     grid-column-end: 1;
     background-color: white;
     color: black;
-    margin-bottom: .5em;
+    margin-bottom: auto auto;
+    padding-bottom: 1rem;
 }
 
 .post{

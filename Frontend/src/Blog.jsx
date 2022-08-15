@@ -26,8 +26,8 @@ function Blog (){
       <div className='entirePage'>
         <h3>Nav bar lol</h3>
         <div className='content'>
-            <h2 className="title">{title}</h2>
             <div className='post'>
+                <h2 className="title">{title}</h2>
                 <MDEditor.Markdown source={value} style={{ whiteSpace: 'pre-wrap' }} />
             </div>
             <div className='side-content'>
