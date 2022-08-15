@@ -6,7 +6,8 @@ import './Blog.css'
 
 
 function Blog (){
-    const [value, setValue] = React.useState("");
+    const [value, setValue] = useState("");
+    const [title, setTitle] = useState("")
     let {id} = useParams()
     
     console.log(id)
@@ -16,15 +17,16 @@ function Blog (){
       .then((response) => {
         console.log(response)
         setValue(response.data.text);
+        setTitle(response.data.title)
       })
     }, []) // Second argurment, [], tells useEffect to rerender when that object changes
     // But since it is static, it never rerenders! Perfect, we only call api once
   
     return(
-      <div >
+      <div className='entirePage'>
         <h3>Nav bar lol</h3>
-        <br/>
         <div className='content'>
+            <h2 className="title">{title}</h2>
             <div className='post'>
                 <MDEditor.Markdown source={value} style={{ whiteSpace: 'pre-wrap' }} />
             </div>
