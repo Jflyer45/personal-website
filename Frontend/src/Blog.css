@@ -2,6 +2,10 @@ p {
     margin-bottom: 0 !important;
 }
 
+h2 {
+    font-family: Times;
+}
+
 .entirePage {
 
 }
@@ -25,13 +29,14 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
 
 .title {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 1;
     background-color: white;
     color: black;
+    margin-bottom: .5em;
 }
 
 .post{
-    
+    grid-column-start: 1;
 }
 
 .side-content {
