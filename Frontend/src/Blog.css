@@ -1,6 +1,6 @@
-p {
+/* p {
     margin-bottom: 0 !important;
-}
+} */
 
 h2 {
     font-family: Times;
@@ -45,7 +45,7 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
 }
 
 ul {
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
     line-height: 1rem;
 }
 
