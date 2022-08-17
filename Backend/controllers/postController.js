@@ -12,9 +12,11 @@ const getPosts = asyncHandler(async (req, res) => {
 })
 
 const getPost = asyncHandler(async (req, res) => {
-    const posts = await Post.findById(req.params.id)
+    // const post = await Post.findById(req.params.id)
+    const titleDelinked = req.params.id.replaceAll("-", " ")
+    const post = await Post.findOne({title: titleDelinked})
 
-    res.json(posts)
+    res.json(post)
 })
 
 

@@ -8,9 +8,10 @@ h2 {
 
 .BlogNav{
     padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 50vh;
     height: 10vh;
-    margin: auto auto;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -34,6 +35,10 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
     gap: 10px;
     padding: 1rem;
     box-sizing: border-box; 
+}
+
+.wmde-markdown {
+    padding-bottom: 3rem;
 }
 
 .title {
