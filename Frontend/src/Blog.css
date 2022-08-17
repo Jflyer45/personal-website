@@ -1,13 +1,9 @@
-/* p {
+.blogEntirePage p {
     margin-bottom: 0 !important;
-} */
+}
 
 h2 {
     font-family: Times;
-}
-
-.entirePage {
-
 }
 
 /* NOTE, the margins on the left and right are auto to center the content. Can only be used if width
@@ -44,12 +40,12 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
     
 }
 
-ul {
-    /* margin-bottom: 0 !important; */
+.blogEntirePage ul {
+    margin-bottom: 0 !important;
     line-height: 1rem;
 }
 
-li {
+.blogEntirePage li {
     list-style-type: disc;
     line-height: .5rem;
   }

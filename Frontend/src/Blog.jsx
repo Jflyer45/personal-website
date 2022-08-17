@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Routes, Route, useParams} from 'react-router-do
 import React, { useState, useEffect} from 'react';
 import './Blog.css'
 
-
 function Blog (){
     const [value, setValue] = useState("");
     const [title, setTitle] = useState("")
@@ -23,7 +22,7 @@ function Blog (){
     // But since it is static, it never rerenders! Perfect, we only call api once
   
     return(
-      <div className='entirePage'>
+      <div className='blogEntirePage'>
         <h3>Nav bar lol</h3>
         <div className='content'>
             <div className='post'>
