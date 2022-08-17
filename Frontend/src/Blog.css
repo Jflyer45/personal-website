@@ -1,9 +1,22 @@
 .blogEntirePage p {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 h2 {
     font-family: Times;
+}
+
+.BlogNav{
+    padding-top: 2rem;
+    width: 50vh;
+    height: 10vh;
+    margin: auto auto;
+    display: flex;
+}
+
+.logo {
+    width: 10rem;
+    float: left;
 }
 
 /* NOTE, the margins on the left and right are auto to center the content. Can only be used if width
@@ -11,7 +24,7 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
 .content{
     margin: 0 auto;
     justify-content: center;
-    width: 70vw;
+    width: 50vw;
     height: 100vh;
     display: grid;
     
@@ -40,12 +53,47 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
     
 }
 
-.blogEntirePage ul {
-    margin-bottom: 0 !important;
+.menu-buttons{
+    position: relative;
+    right:0;
+}
+
+.BlogNav ul {
+    margin-bottom: 0;
     line-height: 1rem;
 }
 
-.blogEntirePage li {
-    list-style-type: disc;
+.BlogNav li {
+
     line-height: .5rem;
-  }
+}
+
+
+.BlogNav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+.BlogNav li {
+    border-top-color: var(--color-primary);
+    border-top-width: 1px;
+    float: left;
+    border-style: solid;
+    border-right-width: 1px;
+    border-right-color: #e4e4e4;
+}
+
+.BlogNav li a {
+display: block;
+color: #000;
+text-align: center;
+padding: 2rem 2rem;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+/* .BlogNav li a:hover {
+background-color: #111;
+} */

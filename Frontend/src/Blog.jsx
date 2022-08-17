@@ -3,6 +3,7 @@ import Axios from 'axios'
 import {BrowserRouter as Router, Routes, Route, useParams} from 'react-router-dom'
 import React, { useState, useEffect} from 'react';
 import './Blog.css'
+import BlogNav from './BlogNav';
 
 function Blog (){
     const [value, setValue] = useState("");
@@ -23,7 +24,7 @@ function Blog (){
   
     return(
       <div className='blogEntirePage'>
-        <h3>Nav bar lol</h3>
+        <BlogNav />
         <div className='content'>
             <div className='post'>
                 <h2 className="title">{title}</h2>
