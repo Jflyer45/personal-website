@@ -2,8 +2,12 @@
     margin-bottom: 0;
 }
 
-h2 {
+/* h2 {
     font-family: Times;
+} */
+
+.title {
+    font-weight: 600;
 }
 
 .BlogNav{
@@ -37,8 +41,22 @@ is > 100vw, because it can't take up the hole screen... then there is no room fo
     box-sizing: border-box; 
 }
 
+.content img {
+    padding-bottom: 2rem;
+}
+
 .wmde-markdown {
     padding-bottom: 3rem;
+}
+
+.wmde-markdown h2{
+    margin: auto auto;
+}
+
+.wmde-markdown li, ul {
+    list-style-type: circle;
+    line-height: 1rem;
+    margin-top: 0;
 }
 
 .title {
