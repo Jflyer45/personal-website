@@ -11,7 +11,7 @@ const ReactTypingEffectDemo = () => {
   return (
     <>
       <ReactTypingEffect
-        text={["Software Engineer", "Economic Research Co-author"]}
+        text={["Software Engineer", "Economic Research Co-author", "Athlete"]}
         speed={typeAndDeleteSpeed}
         eraseSpeed={typeAndDeleteSpeed}
         eraseDelay={2000}
