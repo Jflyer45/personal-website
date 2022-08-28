@@ -8,10 +8,9 @@ import BAC from '../../assets/BAC.pptx'
 const data = [
   {
     id:1,
-    image: IMG1,
-    title: "CIS 122 Data Structures Final Group Project",
-    github: "https://github.com/Jflyer45/CIS122-Project",
-    demo: "https://jflyer45.github.io/CIS122-Project/"
+    image: IMG3,
+    title: "2022 Business Analytics Competition - Python Programmer Role",
+    download: BAC
   },
   {
     id:2,
@@ -22,10 +21,11 @@ const data = [
   },
   {
     id:3,
-    image: IMG3,
-    title: "2022 Business Analytics Competition - Python Programmer Role",
-    download: BAC
-  }
+    image: IMG1,
+    title: "CIS 122 Data Structures Final Group Project",
+    github: "https://github.com/Jflyer45/CIS122-Project",
+    demo: "https://jflyer45.github.io/CIS122-Project/"
+  },
 ]
 
 const createGithubButton = (dataItem) => {
