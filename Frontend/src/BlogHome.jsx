@@ -5,9 +5,19 @@ import Axios from 'axios'
 
 
 function createArticleCard(articleData){
+    console.log(articleData)
+    let articleLink = null
+    try{
+        articleLink = articleData["content"][0]["link"]
+    } catch{
+        
+    }
 
     return(
-        <p>{articleData["title"]}</p>
+        <article>
+            <img src={articleLink} />
+            <p>{articleData["title"]}</p>
+        </article>
     )
 }
 
