@@ -3,6 +3,17 @@ import BlogNav from './BlogNav';
 import './BlogHome.css'
 import Axios from 'axios'
 
+function dateFormater(rawDate) {
+    let year = rawDate.slice(0, 4)
+    let month = rawDate.slice(5, 7)
+    let day = rawDate.slice(8, 10)
+  
+    return `${month}/${day}/${year}`
+}
+
+function titleLinkFormatter(title){
+    return "/blog/" + title.replaceAll(" ", "-")
+}
 
 function createArticleCard(articleData){
     console.log(articleData)
@@ -13,11 +24,27 @@ function createArticleCard(articleData){
         
     }
 
+    
+    let imageBackgroundStyle = "--bg-img: url('" + articleLink +  "')"
+
     return(
-        <article>
-            <img src={articleLink} />
-            <p>{articleData["title"]}</p>
-        </article>
+        // <article>
+        //     <a href={titleLinkFormatter(articleData.title)}>
+        //         <img src={articleLink} />
+        //         <p>{articleData["title"]}</p>
+        //     </a>
+        // </article>v
+
+        <a className="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style={{"backgroundImage": "linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), url(" + articleLink + ")"}}>
+            <div>
+                <h1>Basic types of HTML tags</h1>
+                <p>Learn about some of the most common HTML tags…</p>
+                <div class="date">9 Oct 2017</div>
+                <div class="tags">
+                <div class="tag">HTML</div>
+                </div>
+            </div>
+        </a>
     )
 }
 
