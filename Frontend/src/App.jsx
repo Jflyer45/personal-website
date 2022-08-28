@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import {BrowserRouter as Router, Routes, Route, useParams} from 'react-router-dom'
 import Blog from "./Blog"
+import BlogHome from "./BlogHome"
 import HomePage from './components/home/HomePage'
 
 const app = () => {
@@ -8,6 +9,7 @@ const app = () => {
     <Router>
       <Routes>
         <Route path='/blog/:id' element={<Blog/>}/>
+        <Route path='/blog' element={<BlogHome />}/>
         <Route path='/' element={<HomePage/>}/>
 
         {/* Blog front page */}

@@ -19,13 +19,10 @@ function Blog (){
     const [mainImage, setMainImage] = useState("")
     const [date, setDate] = useState("")
     let {id} = useParams()
-    
-    console.log(id)
 
     useEffect(() => {
       Axios.get(`http://localhost:8000/api/posts/${id}`)
       .then((response) => {
-        console.log(response);
         setValue(response.data.text);
         setTitle(response.data.title);
         setMainImage(response.data.content[0].link);
@@ -45,7 +42,7 @@ function Blog (){
                 <MDEditor.Markdown source={value} style={{ whiteSpace: 'pre-wrap' }} />
             </div>
             <div className='side-content'>
-                <p>Side content</p>
+                
             </div>
         </div>
       </div>
