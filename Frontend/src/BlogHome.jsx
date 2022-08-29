@@ -17,22 +17,15 @@ function titleLinkFormatter(title){
 
 function createArticleCard(articleData){
     console.log(articleData)
-    let articleLink = null
+    let articleContentLink = null
     try{
-        articleLink = articleData["content"][0]["link"]
+        articleContentLink = articleData["content"][0]["link"]
     } catch{
         
     }
-
+    let articleLink = titleLinkFormatter(articleData.title)
     return(
-        // <article>
-        //     <a href={titleLinkFormatter(articleData.title)}>
-        //         <img src={articleLink} />
-        //         <p>{articleData["title"]}</p>
-        //     </a>
-        // </article>v
-
-        <a className="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style={{"backgroundImage": "linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), url(" + articleLink + ")"}}>
+        <a className="card" href={articleLink} style={{"backgroundImage": "linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), url(" + articleContentLink + ")"}}>
             <div>
                 <h1>{articleData.title}</h1>
                 <p>Learn about some of the most common HTML tags…</p>
