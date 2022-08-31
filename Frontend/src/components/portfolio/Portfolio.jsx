@@ -4,6 +4,7 @@ import IMG1 from '../../assets/portfolio1.png'
 import IMG2 from '../../assets/vrSampleImage.png'
 import IMG3 from '../../assets/BAC.png'
 import BAC from '../../assets/BAC.pptx'
+import reddit from '../../assets/tiktokreddit.png'
 
 const data = [
   {
@@ -26,6 +27,13 @@ const data = [
     github: "https://github.com/Jflyer45/CIS122-Project",
     demo: "https://jflyer45.github.io/CIS122-Project/"
   },
+  {
+    id:4,
+    image: reddit,
+    title: "Reddit Story Tiktok Video Automation",
+    github: "https://github.com/Jflyer45/Auto-TikTok-Reddit-Video",
+    demo: "https://www.tiktok.com/@jeremyreddit/video/7104804243504188718?is_copy_url=1&is_from_webapp=v1&lang=en"
+  }
 ]
 
 const createGithubButton = (dataItem) => {
