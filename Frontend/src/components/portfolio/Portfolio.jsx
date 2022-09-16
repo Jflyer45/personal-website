@@ -5,6 +5,8 @@ import IMG2 from '../../assets/vrSampleImage.png'
 import IMG3 from '../../assets/BAC.png'
 import BAC from '../../assets/BAC.pptx'
 import reddit from '../../assets/tiktokreddit.png'
+import crpPic from '../../assets/crp.png'
+import crpPP from '../../assets/crpPP.pptx'
 
 const data = [
   {
@@ -15,20 +17,26 @@ const data = [
   },
   {
     id:2,
+    image: crpPic,
+    title: "CRP Reseach Progress Poster",
+    download: crpPP
+  },
+  {
+    id:3,
     image: IMG2,
     title: "Mankato VR Hospital Project",
     github: "https://github.com/MNSU-CSET/Hospital_Simulator",
     video: "https://www.youtube.com/watch?v=qQh-Kb8ev-A&ab_channel=NathanBursch"
   },
   {
-    id:3,
+    id:4,
     image: IMG1,
     title: "CIS 122 Data Structures Final Group Project",
     github: "https://github.com/Jflyer45/CIS122-Project",
     demo: "https://jflyer45.github.io/CIS122-Project/"
   },
   {
-    id:4,
+    id:5,
     image: reddit,
     title: "Reddit Story Tiktok Video Automation",
     github: "https://github.com/Jflyer45/Auto-TikTok-Reddit-Video",
